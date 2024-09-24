@@ -1,0 +1,46 @@
+@use "@oblique/oblique/styles/scss/core/variables" as *;
+
+ob-column-layout {
+	min-height: 100% !important;
+
+	& .main-container {
+		&.no-layout {
+			padding: 0;
+			position: relative;
+			height: 100%;
+
+			.ob-sticky-content {
+				padding-left: $ob-spacing-xl;
+				padding-right: $ob-spacing-xl;
+			}
+		}
+
+		padding: $ob-spacing-default;
+	}
+
+	& .ob-column-left {
+		margin-top: $ob-spacing-xs;
+	}
+}
+
+
+.ob-column-content:has(> .main-container.no-layout) {
+	padding: 0 !important;
+}
+
+
+.edit-header {
+	display: flex;
+	align-items: center;
+	margin-bottom: $ob-spacing-default;
+
+	& > * {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.button-back {
+		order: -1;
+		margin-right: $ob-spacing-sm;
+	}
+}

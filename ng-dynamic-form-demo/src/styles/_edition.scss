@@ -1,0 +1,17 @@
+@use "@oblique/oblique/styles/scss/core/variables" as *;
+
+#edit-header {
+	display: flex;
+	align-items: center;
+	margin-bottom: $ob-spacing-default;
+
+	& > * {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	#button-back {
+		order: -1;
+		margin-right: $ob-spacing-sm;
+	}
+}

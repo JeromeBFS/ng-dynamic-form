@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://bfs.admin.ch/schemas/dynamic-form-component.schema.json",
+  "description": "Defines properties of a component in a form",
+  "definitions": {
+    "DynamicFormComponent": {
+      "type": "object",
+      "properties": {
+        "componentReferenceId": {
+          "description": "The ID of component reference. The component reference is the available implementation of component",
+          "type": "string",
+          "pattern": "^[\\w\\d-_]+$",
+          "minLength": 1
+        },
+        "id": {
+          "description": "The unique ID of the component (handled by form builder)",
+          "type": "string"
+        },
+        "position": {
+          "description": "Define the position of component in the form",
+          "$ref": "dynamic-form-component-position.schema.json#/definitions/DynamicFormComponentPosition"
+        },
+        "variable": {
+          "description": "The name of related variable, this will be used as the property name in JSON data result of form entries",
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[\\w\\d]+$"
+        },
+        "validators": {
+          "description": "Array that contains all validators used to validate component entry",
+          "type": "array",
+          "items": {
+            "$ref": "dynamic-form-validator.schema.json#/definitions/DynamicFormComponentValidator"
+          }
+        }
+      },
+      "additionalProperties": true,
+      "required": [
+        "componentReferenceId",
+        "id",
+        "position"
+      ]
+    }
+  }
+}

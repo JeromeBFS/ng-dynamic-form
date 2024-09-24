@@ -1,0 +1,8 @@
+@use "@oblique/oblique/styles/scss/core/variables" as *;
+
+.empty {
+	display: block;
+	height: 100%;
+	width: 100%;
+	background: $ob-gray-extra-light;
+}

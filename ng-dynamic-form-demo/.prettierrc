@@ -1,0 +1,15 @@
+{
+	"overrides": [
+	  {
+		"files": "*.ts",
+		"options": {
+			"semi": true,
+			"singleQuote": true,
+			"bracketSpacing": false,
+			"trailingComma": "none",
+			"arrowParens": "avoid",
+			"endOfLine": "auto"
+		}
+	  }
+	]
+}

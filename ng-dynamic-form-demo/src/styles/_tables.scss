@@ -1,0 +1,88 @@
+@use "@oblique/oblique/styles/scss/core/variables" as *;
+@use "@oblique/oblique/styles/scss/core/mixins/layout";
+
+table {
+	width: 100%;
+
+	div.actions {
+		display: inline-flex;
+		gap: $ob-spacing-sm;
+	}
+
+	& mat-chip-set {
+		margin-top: 0px !important;
+	}
+}
+
+.mat-column-actions {
+	text-align: right !important;
+}
+
+.show-row-actions-on-hover {
+	td {
+		button,
+		a[type="button"] {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+
+	tr {
+		&:hover,
+		&:active,
+		&:focus {
+			button,
+			a[type="button"] {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+}
+
+
+tr.containsBadges {
+	height: 65px !important;
+}
+
+/* Expended row css*/
+tr.child-row.not-expanded-row {
+	& td {
+		padding: 0px;
+		border: none !important;
+	}
+
+	border: none !important;
+}
+
+tr.parent-row.expanded-row {
+	& td {
+		border: none !important;
+	}
+
+	border: none !important;
+}
+
+tr.child-row.expanded-row {
+	& td {
+		padding: $ob-spacing-sm;
+		border-bottom: 1px solid $ob-secondary-200;
+	}
+}
+
+
+tr.child-row,
+tr.parent-row.expanded-row {
+	&:hover,
+	&:active {
+		background: transparent !important;
+	}
+}
+
+.parent-row td {
+	border-bottom: 0 !important;
+}
+
+.element-detail {
+	padding: 0 $ob-spacing-default $ob-spacing-default 0px !important;
+}

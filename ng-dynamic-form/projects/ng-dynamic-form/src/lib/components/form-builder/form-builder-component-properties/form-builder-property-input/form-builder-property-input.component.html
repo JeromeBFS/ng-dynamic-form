@@ -1,0 +1,6 @@
+<form [formGroup]="formGroup">
+	<mat-form-field>
+		<mat-label>{{ property.label | multilingualText }}</mat-label>
+		<input formControlName="value" matInput />
+	</mat-form-field>
+</form>
