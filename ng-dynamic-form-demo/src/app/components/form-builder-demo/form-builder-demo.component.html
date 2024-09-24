@@ -1,0 +1,53 @@
+<ob-column-layout [left]="false" [wider]="false">
+	<ng-container column-main-content>
+		<div class="builder">
+			<div class="media-buttons">
+				<mat-icon
+					(click)="setMedia(Media.Small)"
+					[class.selected]="media === Media.Small"
+					matTooltip="{{ 'i18n.app.media.small' | translate }}"
+					matTooltipPosition="above"
+					svgIcon="mobile"
+				/>
+				<mat-icon
+					(click)="setMedia(Media.Medium)"
+					[class.selected]="media === Media.Medium"
+					matTooltip="{{ 'i18n.app.media.medium' | translate }}"
+					matTooltipPosition="above"
+					svgIcon="tablet"
+				/>
+				<mat-icon
+					(click)="setMedia(Media.Large)"
+					[class.selected]="media === Media.Large"
+					matTooltip="{{ 'i18n.app.media.large' | translate }}"
+					matTooltipPosition="above"
+					svgIcon="desktop"
+				/>
+			</div>
+			<div class="grid" [class.large]="this.media === Media.Large" [class.medium]="this.media === Media.Medium" [class.small]="this.media === Media.Small">
+				<ndf-form-grid [form]="form" [mode]="RenderingMode.Build" [media]="media"></ndf-form-grid>
+			</div>
+		</div>
+	</ng-container>
+	<ng-container column-right-content>
+		<div class="right-content">
+			<mat-tab-group>
+				<mat-tab label="Tools">
+					<ndf-form-builder-tools />
+				</mat-tab>
+				<mat-tab label="Settings">
+					<ndf-form-builder-component-properties [component]="selectedComponent" />
+				</mat-tab>
+				<mat-tab label="J">
+					<div class="json">
+						<button mat-button obButton="secondary" (click)="copyJson()">
+							<mat-icon svgIcon="duplicate"></mat-icon>
+							<span>Copy json</span>
+						</button>
+						<ngx-json-viewer [json]="mainFormView" />
+					</div>
+				</mat-tab>
+			</mat-tab-group>
+		</div>
+	</ng-container>
+</ob-column-layout>

@@ -1,0 +1,43 @@
+@use "@oblique/oblique/styles/scss/core/variables" as *;
+
+mat-checkbox {
+	+ button {
+		display: inline-block !important;
+	}
+}
+
+mat-chip-set.remove-margin-top {
+	margin-top: 0 !important;
+}
+
+/*Fix Css*/
+.mat-mdc-card-title, .mat-mdc-card-subtitle {
+	padding: $ob-spacing-default;
+}
+
+/* Fix popover z-index*/
+.ob-popover-content {
+	z-index: 1000 !important;
+}
+
+.ob-service-navigation-list {
+	gap: $ob-spacing-default !important;
+}
+
+.ob-footer-item-info {
+	& .footer-list {
+		& a {
+			color: $ob-white;
+		}
+	}
+}
+
+.filterChips {
+	margin-bottom: $ob-spacing-sm;
+}
+
+mat-list.reduce-padding {
+	> mat-list-item {
+		padding: 4px 16px !important;
+	}
+}

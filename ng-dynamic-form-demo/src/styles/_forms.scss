@@ -1,0 +1,41 @@
+@use "@oblique/oblique/styles/scss/core/variables" as *;
+
+mat-checkbox {
+	padding-right: $ob-spacing-default !important;
+}
+
+form {
+	mat-tab-header {
+		padding-bottom: $ob-spacing-default !important;
+	}
+}
+
+span.after-input-icon {
+	padding-left: 0;
+
+	button {
+		left: -14px;
+		top: $ob-spacing-xs;
+	}
+}
+
+
+.form-actions {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 100%;
+
+	> button {
+		margin-left: $ob-spacing-default;
+	}
+
+	.ob-sticky-footer & {
+		padding: 0 $ob-spacing-xl;
+	}
+
+	mat-paginator {
+		justify-self: flex-start;
+		margin-right: auto;
+	}
+}

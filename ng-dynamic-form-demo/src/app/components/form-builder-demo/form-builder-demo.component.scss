@@ -1,0 +1,73 @@
+@use "@oblique/oblique/styles/scss/core/variables" as *;
+
+ob-column-layout {
+  height: 100%;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+
+  .form-management {
+  }
+}
+
+.builder {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .media-buttons {
+    align-self: end;
+    display: inline-flex;
+    gap: 10px;
+
+    mat-icon {
+      cursor: pointer;
+      color: $ob-gray-light;
+      width: 25px;
+      height: 25px;
+
+      &:hover {
+        color: $ob-gray-dark;
+      }
+
+      &.selected {
+        color: $ob-blue-900;
+        cursor: default;
+      }
+    }
+  }
+
+  .grid {
+    align-self: center;
+
+    &.large {
+      width: 100%;
+    }
+
+    &.medium {
+      width: 840px;
+    }
+
+    &.small {
+      width: 600px;
+    }
+  }
+}
+
+mat-tab-group {
+  height: 100%;
+
+  ::ng-deep .mat-mdc-tab-body-wrapper {
+    flex: 1 1 100%;
+  }
+}
+
+.json {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

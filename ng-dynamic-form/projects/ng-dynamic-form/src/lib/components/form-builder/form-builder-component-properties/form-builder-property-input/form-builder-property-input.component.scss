@@ -1,0 +1,27 @@
+@use "@oblique/oblique/styles/scss/core/variables" as *;
+
+.languages {
+	font-size: 12px;
+	display: inline-block;
+	margin: 0 3px 3px 0;
+	width: 80px;
+
+	span {
+		padding: 0 3px;
+		align-items: center;
+		vertical-align: middle;
+		cursor: pointer;
+		color: $ob-gray-light;
+		width: 25px;
+		height: 25px;
+
+		&:hover {
+			color: $ob-gray-dark;
+		}
+
+		&.selected {
+			color: $ob-red-600;
+			cursor: default;
+		}
+	}
+}

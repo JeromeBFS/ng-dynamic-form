@@ -1,0 +1,13 @@
+// this file should contain only imports. Rules should be grouped by features and placed into the corresponding file
+
+@use "@oblique/oblique/styles/scss/core/variables" as *;
+@use "notification";
+@use "dialogs";
+@use "forms";
+@use "tables";
+@use "edition";
+@use "tree";
+@use "widgets";
+@use "layout";
+@use "flex";
+@use "global";

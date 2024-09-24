@@ -1,0 +1,434 @@
+{
+  "name": "LifeStat2",
+  "forms": [
+    {
+      "media": "large",
+      "components": [
+        {
+          "id": "component-1724143959994",
+          "component": "text",
+          "position": {
+            "row": 1,
+            "col": 1,
+            "colspan": 12
+          },
+          "text": {
+            "de": "Leben stastik",
+            "fr": "Statistique sur la vie",
+            "it": "Statistico su la vita",
+            "en": "Life statistic"
+          },
+          "textStyle": "H1"
+        },
+        {
+          "id": "component-1724144067472",
+          "component": "text",
+          "position": {
+            "row": 2,
+            "col": 1,
+            "colspan": 6
+          },
+          "text": {
+            "de": "Person",
+            "fr": "Personne",
+            "it": "Persona",
+            "en": "Person"
+          },
+          "textStyle": "H4"
+        },
+        {
+          "id": "component-1724144120793",
+          "component": "input",
+          "position": {
+            "row": 3,
+            "col": 1,
+            "colspan": 6
+          },
+          "label": {
+            "de": "Name",
+            "fr": "Nom",
+            "it": "Nome",
+            "en": "Last name"
+          },
+          "type": "string",
+          "placeholder": {
+            "de": "Ihre familie name",
+            "fr": "Saisissez votre nom de famille",
+            "it": "Il vostro famiglia nome",
+            "en": "Your family name"
+          },
+          "variable": "LastName"
+        },
+        {
+          "id": "component-1724144215959",
+          "component": "input",
+          "position": {
+            "row": 3,
+            "col": 7,
+            "colspan": 6
+          },
+          "label": {
+            "de": "Vorname",
+            "fr": "Prénom",
+            "it": "Cognome",
+            "en": "First name"
+          },
+          "type": "string",
+          "variable": "FirstName"
+        },
+        {
+          "id": "component-1724144308987",
+          "component": "input",
+          "position": {
+            "row": 4,
+            "col": 1,
+            "rowspan": 1,
+            "colspan": 6
+          },
+          "label": {
+            "de": "Strasse",
+            "fr": "Rue",
+            "it": "Via",
+            "en": "Street"
+          },
+          "type": "string",
+          "variable": "Street"
+        },
+        {
+          "id": "component-1724144359700",
+          "component": "input",
+          "position": {
+            "row": 4,
+            "col": 7,
+            "colspan": 2
+          },
+          "label": {
+            "de": "Nummer",
+            "fr": "Numéro",
+            "it": "Numero",
+            "en": "Number"
+          },
+          "type": "string",
+          "variable": "HouseNumber"
+        },
+        {
+          "id": "component-1724144408175",
+          "component": "input",
+          "position": {
+            "row": 5,
+            "col": 1,
+            "colspan": 2
+          },
+          "label": {
+            "fr": "NPA"
+          },
+          "type": "string",
+          "variable": "ZipCode"
+        },
+        {
+          "id": "component-1724144429684",
+          "component": "input",
+          "position": {
+            "row": 5,
+            "col": 3,
+            "colspan": 8
+          },
+          "label": {
+            "de": "Stadt",
+            "fr": "Localité",
+            "it": "Villagio",
+            "en": "Town"
+          },
+          "type": "string",
+          "variable": "Town"
+        }
+      ]
+    },
+    {
+      "media": "medium",
+      "components": [
+        {
+          "id": "component-1724143959994",
+          "component": "text",
+          "position": {
+            "row": 1,
+            "col": 1,
+            "colspan": 8
+          },
+          "text": {
+            "de": "Leben stastik",
+            "fr": "Statistique sur la vie",
+            "it": "Statistico su la vita",
+            "en": "Life statistic"
+          },
+          "textStyle": "H1"
+        },
+        {
+          "id": "component-1724144067472",
+          "component": "text",
+          "position": {
+            "row": 2,
+            "col": 1,
+            "colspan": 6
+          },
+          "text": {
+            "de": "Person",
+            "fr": "Personne",
+            "it": "Persona",
+            "en": "Person"
+          },
+          "textStyle": "H4"
+        },
+        {
+          "id": "component-1724144120793",
+          "component": "input",
+          "position": {
+            "row": 3,
+            "col": 1,
+            "colspan": 4
+          },
+          "label": {
+            "de": "Name",
+            "fr": "Nom",
+            "it": "Nome",
+            "en": "Last name"
+          },
+          "type": "string",
+          "placeholder": {
+            "de": "Ihre familie name",
+            "fr": "Saisissez votre nom de famille",
+            "it": "Il vostro famiglia nome",
+            "en": "Your family name"
+          },
+          "variable": "LastName"
+        },
+        {
+          "id": "component-1724144215959",
+          "component": "input",
+          "position": {
+            "row": 3,
+            "col": 5,
+            "colspan": 4
+          },
+          "label": {
+            "de": "Vorname",
+            "fr": "Prénom",
+            "it": "Cognome",
+            "en": "First name"
+          },
+          "type": "string",
+          "variable": "FirstName"
+        },
+        {
+          "id": "component-1724144308987",
+          "component": "input",
+          "position": {
+            "row": 4,
+            "col": 1,
+            "rowspan": 1,
+            "colspan": 6
+          },
+          "label": {
+            "de": "Strasse",
+            "fr": "Rue",
+            "it": "Via",
+            "en": "Street"
+          },
+          "type": "string",
+          "variable": "Street"
+        },
+        {
+          "id": "component-1724144359700",
+          "component": "input",
+          "position": {
+            "row": 4,
+            "col": 7,
+            "colspan": 2
+          },
+          "label": {
+            "de": "Nummer",
+            "fr": "Numéro",
+            "it": "Numero",
+            "en": "Number"
+          },
+          "type": "string",
+          "variable": "HouseNumber"
+        },
+        {
+          "id": "component-1724144408175",
+          "component": "input",
+          "position": {
+            "row": 5,
+            "col": 1,
+            "colspan": 2
+          },
+          "label": {
+            "fr": "NPA"
+          },
+          "type": "string",
+          "variable": "ZipCode"
+        },
+        {
+          "id": "component-1724144429684",
+          "component": "input",
+          "position": {
+            "row": 5,
+            "col": 3,
+            "colspan": 6
+          },
+          "label": {
+            "de": "Stadt",
+            "fr": "Localité",
+            "it": "Villagio",
+            "en": "Town"
+          },
+          "type": "string",
+          "variable": "Town"
+        }
+      ]
+    },
+    {
+      "media": "small",
+      "components": [
+        {
+          "id": "component-1724143959994",
+          "component": "text",
+          "position": {
+            "row": 1,
+            "col": 1,
+            "colspan": 4
+          },
+          "text": {
+            "de": "Leben stastik",
+            "fr": "Statistique sur la vie",
+            "it": "Statistico su la vita",
+            "en": "Life statistic"
+          },
+          "textStyle": "H1"
+        },
+        {
+          "id": "component-1724144067472",
+          "component": "text",
+          "position": {
+            "row": 2,
+            "col": 1,
+            "colspan": 4
+          },
+          "text": {
+            "de": "Person",
+            "fr": "Personne",
+            "it": "Persona",
+            "en": "Person"
+          },
+          "textStyle": "H4"
+        },
+        {
+          "id": "component-1724144120793",
+          "component": "input",
+          "position": {
+            "row": 3,
+            "col": 1,
+            "colspan": 4
+          },
+          "label": {
+            "de": "Name",
+            "fr": "Nom",
+            "it": "Nome",
+            "en": "Last name"
+          },
+          "type": "string",
+          "placeholder": {
+            "de": "Ihre familie name",
+            "fr": "Saisissez votre nom de famille",
+            "it": "Il vostro famiglia nome",
+            "en": "Your family name"
+          },
+          "variable": "LastName"
+        },
+        {
+          "id": "component-1724144215959",
+          "component": "input",
+          "position": {
+            "row": 4,
+            "col": 1,
+            "colspan": 4
+          },
+          "label": {
+            "de": "Vorname",
+            "fr": "Prénom",
+            "it": "Cognome",
+            "en": "First name"
+          },
+          "type": "string",
+          "variable": "FirstName"
+        },
+        {
+          "id": "component-1724144308987",
+          "component": "input",
+          "position": {
+            "row": 5,
+            "col": 1,
+            "rowspan": 1,
+            "colspan": 3
+          },
+          "label": {
+            "de": "Strasse",
+            "fr": "Rue",
+            "it": "Via",
+            "en": "Street"
+          },
+          "type": "string",
+          "variable": "Street"
+        },
+        {
+          "id": "component-1724144359700",
+          "component": "input",
+          "position": {
+            "row": 5,
+            "col": 4,
+            "colspan": 1
+          },
+          "label": {
+            "de": "Nummer",
+            "fr": "Numéro",
+            "it": "Numero",
+            "en": "Number"
+          },
+          "type": "string",
+          "variable": "HouseNumber"
+        },
+        {
+          "id": "component-1724144408175",
+          "component": "input",
+          "position": {
+            "row": 6,
+            "col": 1,
+            "colspan": 4
+          },
+          "label": {
+            "fr": "NPA"
+          },
+          "type": "string",
+          "variable": "ZipCode"
+        },
+        {
+          "id": "component-1724144429684",
+          "component": "input",
+          "position": {
+            "row": 7,
+            "col": 1,
+            "colspan": 4
+          },
+          "label": {
+            "de": "Stadt",
+            "fr": "Localité",
+            "it": "Villagio",
+            "en": "Town"
+          },
+          "type": "string",
+          "variable": "Town"
+        }
+      ]
+    }
+  ]
+}

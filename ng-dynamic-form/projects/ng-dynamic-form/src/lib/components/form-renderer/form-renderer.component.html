@@ -1,0 +1,15 @@
+<ob-column-layout [left]="false" [wider]="false">
+	<ng-container column-main-content>
+		<div>{{ media }}</div>
+		<ndf-form-grid [media]="media" [mode]="RenderingMode.Render" [form]="form" [formGroup]="formGroup" (formGroupFilled)="formGroupFilled($event)" />
+	</ng-container>
+	<ng-container column-right-content>
+		<div class="json">
+			<button mat-button obButton="secondary" (click)="copyJson()">
+				<mat-icon svgIcon="duplicate"></mat-icon>
+				<span>Copy json</span>
+			</button>
+			<ngx-json-viewer [json]="formData"></ngx-json-viewer>
+		</div>
+	</ng-container>
+</ob-column-layout>

@@ -1,0 +1,21 @@
+@use "@oblique/oblique/styles/scss/core/variables" as *;
+
+
+.mat-mdc-dialog-title {
+	font-size: 1.125rem !important;
+	font-weight: 500 !important;
+	line-height: 1.333333 !important;
+	letter-spacing: .2px !important;
+	position: relative !important;
+}
+
+.mdc-dialog__title::before {
+	height: 10px !important;
+}
+
+/* Fix survey form*/
+app-survey-form {
+	& .mat-mdc-tab-body-content {
+		height: 52vh !important;
+	}
+}
